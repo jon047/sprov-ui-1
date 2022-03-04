@@ -28,7 +28,7 @@ public class V2rayConfigService {
     private ThreadService threadService = Context.threadService;
 
 //    @Value("${v2ray.config-location}")
-    private String configLocation = "/etc/v2ray/config.json";
+    private String configLocation = "/usr/local/etc/v2ray/config.json";
 
     private final Pattern uuidPattern = Pattern.compile("[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}");
 
