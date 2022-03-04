@@ -21,10 +21,10 @@ public class V2rayService {
 //    private String active;
 
 //    @Value("${v2ray.install}")
-    private static final String INSTALL_CMD = "bash <(curl -L -s https://install.direct/go.sh)";
+    private static final String INSTALL_CMD = "bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --version v4.34.0";
 
 //    @Value("${v2ray.update}")
-    private static final String UPDATE_CMD = "bash <(curl -L -s https://install.direct/go.sh) -f";
+    private static final String UPDATE_CMD = "bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --version v4.34.0 -f";
 
     private static final String START_CMD = "systemctl start v2ray";
     private static final String RESTART_CMD = "systemctl restart v2ray";
